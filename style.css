@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	background-color: #000;
+}
+
+.header-logo {
+	margin-top: 56px;
+	margin-left: 12%;
+}
+
+nav {
+	margin-top: 47px;
+	margin-left: 29%
+}
+
+.topnav a {
+	color: #fff;
+	text-align: center;
+	padding: 12px 16px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.topnav a:hover {
+	border-bottom: 3px solid #fcac45;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.my-company {
+	background-color: #000;
+	text-align: center;
+	padding: 195px 0 420px;
+
+}
+
+.my-company p {
+	color: #999999;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.my-company h1 {
+	font-size: 44px;
+	font-weight: 300;
+	color: #999999;
+	text-transform: uppercase;
+}
+
+.my-company h1 span {
+	color: #fcac45;
+	font-weight: 600;
+}
+
+.my-company p {
+	color: #999999;;
+	font-weight: 400;
+}
+
+.my-company p span {
+	color: #c3c3c3;
+	font-weight: 25px;
+	font-weight: 600;
+}
+ 
+.wrapper {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.about-us {
+	display: flex;
+	padding: 100px 0px 100px 0;
+}
+
+.about-right {
+	margin-left: 175px;
+}
+
+.about-right h2 {
+	display: inline-block;
+	border-bottom: 3px solid #fcac45;
+	padding-bottom: 20px;
+	font-size: 34px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.about-right h2 span {
+	font-weight: bold;
+}
+
+.about-right p {
+	font-size: 18px;
+	color: #6c6c6c;
+	margin: 30px 0 50px 0;
+}
+
+.about-right li {
+	background: url(images/cir.png) 0px no-repeat;
+	padding-left: 25px;
+	margin-bottom: 20px;
+	color: #5a5a5a;
+	font-style: italic;
+}
+
+.mw-100 {
+	min-width: 100%;
+}
+
+.about-right li span {
+	color: #5a5a5a;
+	font-weight: bold;
+
+}
+
+.team {
+	background-color: #000;
+	text-align: center;
+	padding: 100px 0 170px ;
+	color: #fff;
+}
+
+.team h2 {
+	display: inline-block;
+	font-size: 44px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 110px;
+}
+
+h2:after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	padding-top: 22px;
+	border-bottom: 3px solid #fcac45;
+}
+
+.about-right h2:after {
+	display: none;
+}
+
+
+.member-photo {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	margin: 20px auto;
+}
+
+.members {
+	display: flex;
+}
+
+.member-name {
+	font-size: 20px;
+	margin-bottom: 4px;
+}
+
+.member-position {
+	font-size: 16px;
+	font-weight: 300;
+	color: #cdcdcd;
+	margin-bottom: 30px;
+}
+
+.about-position {
+	font-size: 14px;
+	font-weight: 300;
+	color: #cdcdcd;
+}
+
+.service {
+	text-align: center;
+	padding: 100px 0 100px;
+}
+
+.service-items {
+	display: flex;
+	margin-top: 105px;
+}
+
+.service-title {
+	display: inline-block;
+	font-size: 44px;
+	font-weight: 600;
+	color: #222222;
+	text-transform: uppercase;
+	margin-bottom: 77px;
+}
+
+
+.service-title-info{
+	font-size: 16px;
+	font-style: italic;
+	color: #6c6c6c;
+}
+
+.service-card {
+	text-align: center;
+	padding: 0 25px;
+}
+
+.service-subtitle {
+	font-size: 25px;
+	font-weight: 600px;
+	color: #222222;
+	text-transform: uppercase;
+	padding-top: 155px;
+	position: relative;
+	display: inline-block;
+}
+
+.service-info {
+	font-size: 14px;
+	color: #6c6c6c;
+	padding-top: 20px;
+}
+
+.view:before {
+	content: '';
+	display: block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 5px solid #fcac45;
+	background: url(images/form.svg) no-repeat center;
+	position: absolute;
+	left: 10px;
+	top: 0;
+}
+
+.iphone:before {
+	content: '';
+	display: block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 5px solid #fcac45;
+	background: url(images/phone.svg) no-repeat center;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+
+.photo:before {
+	content: '';
+	display: block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 5px solid #fcac45;
+	background: url(images/phot.svg) no-repeat center;
+	position: absolute;
+	left: 25px;
+	top: 0;
+}
+
+.horn:before {
+	content: '';
+	display: block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 5px solid #fcac45;
+	background: url(images/horn.svg) no-repeat center;
+	position: absolute;
+	left: 8px;
+	top: 0;
+}
+
+.our-clients {
+	background-color: #000;
+	text-align: center;
+}
+
+.clients {
+	display: flex;
+	justify-content: space-between;
+	margin: 142px 0 210px;
+}
+
+.clients-title {
+	padding-top: 100px;
+	font-size: 44px;
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: 300;
+}
+
+.clients-title span {
+	font-weight: 600;
+}
+
+.testimonials {
+	padding: 100px 0 175px;
+	text-align: center;
+	background-color: #000;
+}
+
+.testimonials h2 {
+	text-transform: uppercase;
+	font-size: 44px;
+	padding-bottom: 25px;
+	color: #fff;
+	font-weight: 600px;
+	display: inline-block;
+}
+
+.testimonials h2 span{
+	font-weight: 300;
+}
+
+.testimonials p:first-of-type {
+	padding-top: 60px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #e7e7e7;
+}
+
+.testimonials p:last-of-type {
+	font-size: 18px;
+	color: #b2b2b2;
+	padding-top: 40px;
+	font-weight: bold;
+}
+
+.testimonials p span {
+	font-weight: 300;
+}
+
+.our-work {
+	text-align: center;
+	padding: 100px 0 100px;
+}
+
+.our-work h2 {
+	display: inline-block;
+	padding-bottom: 25px;
+	font-size: 44px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.our-work h2 span {
+	font-weight: bold;
+}
+
+.our-work p {
+	font-size: 16px;
+	font-style: italic;
+	color: #bababa;
+	padding-top: 55px;
+}
+
+.gallery {
+	margin-top: 175px;
+}
+
+.gallery img {
+	padding: 15px;
+}
+
+.gallery img:hover {
+	opacity: 0.9;
+}
+
+.contact-wrapper {
+	width: 753px;
+	margin: 0 auto;
+	color: #636363;
+	padding: 100px 0 ;
+}
+
+.red {
+	color: red;
+}
+
+input {
+	width: 360px;
+	height: 40px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.form-input {
+	display: flex;
+}
+
+textarea {
+	width: 100%;
+	height: 165px;
+}
+
+input,
+textarea {
+	border: 1px solid #999999;
+	margin-top: 5px;
+}
+
+
+.input-name input {
+	margin-right: 30px;
+}
+
+.button-block {
+	display: flex;
+	justify-content: flex-end;
+}
+
+input[type=submit] {
+	width: 165px;
+	height: 40px;
+	background-color: #fcac45;
+	color: #fff;
+	margin-right: 0;
+	margin-top: 20px;
+}
+
+.contact-form {
+	text-align: center;
+}
+
+.contact-form h2 {
+	font-size: 44px;
+	font-style: 600;
+	color: #000;
+	text-transform: uppercase;
+	padding-bottom: 22px;
+	display: inline-block;
+}
+
+.contact-text {
+	font-size: 16px;
+	color: #bababa;
+	margin: 40px 0 95px;
+}
+
+form p {
+	text-align: left;
+	font-size: 16px;
+	color: #bababa;
+}
+
+footer {
+	background-color: #000;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0 ;
+}
+
+.social img {
+	margin-left: 12px;
+}
+
+.social img:hover {
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 1595px) {
+	.gallery-line1 img:last-child {
+		display: none;
+	}
+
+	.gallery-line2 img:last-child {
+		display: none;
+	}
+
+	.gallery-line3 img:last-child {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1310px) {
+	nav {
+		margin-left: 20%;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.gallery-line1 img:nth-child(2n) {
+		display: none;
+	}
+
+	.gallery-line2 img:nth-child(2n) {
+		display: none;
+	}
+
+	.gallery-line3 img:nth-child(2n) {
+		display: none;
+	}
+
+	.gallery {
+		margin-top: 50px;
+	}
+} 
+
+@media screen and (max-width: 1180px) {
+	.service-items {
+		flex-wrap: wrap;
+	}
+
+	.service-card {
+		width: 50%;
+		margin-bottom: 100px;
+	}
+
+	.clients {
+		flex-direction: column;
+		margin: 30px 0 70px;
+	}
+
+	.clients img {
+		padding: 30px 0 ;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	nav {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 1010px) {
+	.topnav a {
+		display: none;
+	}
+	
+	.topnav a.icon {
+		float: right;
+		display: block;
+		margin-top: -20px;
+		font-size: 25px;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	.topnav.responsive {
+		position: relative;
+		top: 50px;
+		left: -200px;
+	}
+
+	header .topnav.responsive {
+		height: 340px;
+	}
+	
+	.topnav.responsive a.icon {
+		position: absolute;
+		top: -50px;
+		right: -200px;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.topnav a:hover {
+		border-bottom: none;
+	}
+
+	.my-company {
+		padding: 50px 0 50px;
+	} 
+
+	.my-company p{
+		font-size: 14px;
+	}
+
+	.my-company h1{
+		font-size: 25px;
+	}
+
+	.mw-100 {
+		max-width: 100%;
+	}
+
+	.about-us {
+		flex-direction: column;
+	}
+
+	.about-right {
+		text-align: center;
+		margin-left: 0;
+	}
+	
+	.about-right li {
+		text-align: left;
+	}
+
+	.about-right h2 {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	.members {
+		flex-direction: column;
+	}
+
+	.service-items {
+		flex-wrap: wrap;
+	}
+
+	.service-card {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 801px) {
+	.testimonials h2 {
+		font-size: 35px;
+	}
+
+	.testimonials {
+		padding: 50px 0 80px;
+	}
+
+	.gallery-line1 img:not(:first-child) {
+		display: none;
+	}
+
+	.gallery-line2 img:not(:first-child) {
+		display: none;
+	}
+
+	.gallery-line3 img:not(:first-child) {
+		display: none;
+	}
+
+	.contact-wrapper {
+		width: 500px;
+	}
+
+	input {
+		width: 200px;
+		height: 30px;
+	}
+	
+	.form-input {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	textarea {
+		height: 80px;
+	}
+
+}
+
+@media screen and (max-width: 680px) {
+	.clients-title {
+		font-size: 35px;
+	}
+
+	
+}
+
+@media screen and (max-width: 530px) {
+	.contact-wrapper {
+		width: 50%;
+	}
+
+	.form-input {
+		flex-direction: column;
+		align-items:  center;
+	}
+
+	.input-name input {
+		margin: 0;
+	}
+
+	input {
+		width: 100%;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.clients-title:after {
+		left: 35%
+	}
+
+	.testimonials h2:after {
+		left: 35%;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.topnav.responsive a.icon{
+		right: -150px;
+	}
+
+	.clients-title:after {
+		left: 30%
+	}
+
+	.testimonials h2:after {
+		left: 30%;
+	}
+}
